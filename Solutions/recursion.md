@@ -1,4 +1,4 @@
- > 1) Sum Triangle 
+### 1) Sum Triangle 
 
 ```
 class HelloWorld {
