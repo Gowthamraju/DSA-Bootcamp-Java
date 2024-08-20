@@ -28,3 +28,24 @@ class HelloWorld {
     }
 }
 ```
+### FirstUppercas
+```
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+      String str = "geeksforGeeKs";
+     char ch = firstCapital(str,0);
+     System.out.println(ch);
+    }
+    static char firstCapital(String str, int i){
+        if(str.charAt(i) == '\0'){
+            return 0;
+        }
+        if(Character.isUpperCase(str.charAt(i))){
+            return str.charAt(i);
+        }
+        int in =i+1;
+        return firstCapital(str,in);
+    }
+}
+```
