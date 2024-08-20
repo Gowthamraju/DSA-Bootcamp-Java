@@ -49,3 +49,22 @@ class HelloWorld {
     }
 }
 ```
+
+### Print 1 to N without Loop
+```
+class HelloWorld {
+    public static void main(String[] args) {
+       firstCapital(0,10);
+    /// System.out.println(ch);
+    }
+    static int firstCapital( int i,int n){
+        if(i==n){
+            return i;
+        }
+        i +=1;
+        
+        System.out.println(i);
+         return firstCapital(i,n);
+    }
+}
+```
