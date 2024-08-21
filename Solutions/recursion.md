@@ -67,4 +67,24 @@ class HelloWorld {
          return firstCapital(i,n);
     }
 }
+
+### Countnumber of Characters in String
+```
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        String str = "Gowtham";
+        int counter = count(str);
+        System.out.println(counter);
+    }
+    
+    static int count(String str){
+        if(str.equals("")){
+            return 0;
+        }
+        
+        return count(str.substring(1))+1;
+    }
+}
+```
 ```
