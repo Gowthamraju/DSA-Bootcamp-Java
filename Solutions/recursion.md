@@ -116,3 +116,21 @@ class HelloWorld {
     }
 }
 ```
+### Sum of digit of a number using Recursion GFG
+```
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        int n=123456;
+        int counter = count(n);
+        System.out.println(counter);
+    }
+    
+    static int count(int n){
+        if(n==0){
+            return 0;
+        }
+        int num = n/10;
+        return count(num)+n%10;
+    }
+```
