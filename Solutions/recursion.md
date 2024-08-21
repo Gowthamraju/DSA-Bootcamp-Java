@@ -68,6 +68,7 @@ class HelloWorld {
     }
 }
 
+```
 ### Countnumber of Characters in String
 ```
 class HelloWorld {
@@ -86,5 +87,4 @@ class HelloWorld {
         return count(str.substring(1))+1;
     }
 }
-```
 ```
