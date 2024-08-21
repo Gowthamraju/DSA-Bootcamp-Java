@@ -88,3 +88,31 @@ class HelloWorld {
     }
 }
 ```
+### Geek-onacci Number GFG
+```
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        int a=1;
+        int b=3;
+        int c=2;
+        int n=6;
+        int counter = count(n);
+        System.out.println(counter);
+    }
+    
+    static int count(int n){
+        if(n==1){
+            return 1;
+        }
+        if(n==2){
+            return 3;
+        }
+        if(n==3){
+            return 2;
+        }
+        
+        return count(n-1)+count(n-2)+count(n-3);
+    }
+}
+```
