@@ -134,3 +134,52 @@ class HelloWorld {
         return count(num)+n%10;
     }
 ```
+
+### Check array is sorted or not
+```
+private static boolean checkArraySorted(int[] arr,int index) {
+        if(arr.length <=1 || index == arr.length-1) {
+            return true;
+        }
+        if(arr[index]>arr[index+1]){
+            return false;
+        }
+        return checkArraySorted(arr,index + 1);
+    }
+**OR**
+// Java Recursive approach to check if an
+// Array is sorted or not
+class GFG {
+
+    // Function that returns true if array is
+    // sorted in non-decreasing order.
+    static boolean arraySortedOrNot(int a[], int n)
+    {
+          // base case
+        if (n == 1 || n == 0)
+            return true;
+    
+          // check if present index and index 
+        // previous to it are in correct order
+        // and rest of the array is also sorted
+        // if true then return true else return
+        // false
+        return a[n - 1] >= a[n - 2]
+            && arraySortedOrNot(a, n - 1);
+    }
+
+    // Driver code
+    public static void main(String[] args)
+    {
+
+        int arr[] = { 20, 23, 23, 45, 78, 88 };
+        int n = arr.length;
+        
+          // Function Call
+        if (arraySortedOrNot(arr, n))
+            System.out.print("Yes");
+        else
+            System.out.print("No");
+    }
+}
+```
